@@ -34,7 +34,7 @@ import { environment as env } from '../environments/environment';
     ErrorComponent
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule,
     HttpClientModule,
     NgbModule,
